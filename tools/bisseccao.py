@@ -13,7 +13,6 @@ def bisseccao (intervalo,exp):
 
     while u < 3 or e < 10e-4:
         global c
-        #global u
         i = (a+b)/2
         c = f(i)
         #print(f"f({i} = {c})")
