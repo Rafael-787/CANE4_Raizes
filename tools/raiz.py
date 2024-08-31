@@ -10,6 +10,7 @@ def raiz(intervalo,formula):
     print(xk)
     r,i,e = newton(xk,formula)
     print(f'raiz: {r}  iteração:{i+u}  erro:{e}')
+    return r, i+u, e
 
 
 if __name__ == "__main__":
