@@ -12,7 +12,7 @@ def bisseccao (intervalo,exp):
     f = lambdify(x,exp,'numpy')
 
     while u < 3 or e < 10e-4:
-        global c
+        #global c
         i = (a+b)/2
         c = f(i)
         #print(f"f({i} = {c})")
@@ -21,17 +21,18 @@ def bisseccao (intervalo,exp):
         else:
             b = i
 
+        print(f"i:{i} i_old:{i_old}")
         e = abs((i)-i_old)/abs(i)
         i_old = i
-        #print(u)
         u += 1
+        print(u)
 
     #print(f"Raiz: {i}  iterações:{u}")
     return i,u
 
 if __name__ == "__main__":
     
-    intervalo = (-5,0)
+    intervalo = (-4.1703170317031635, -3.1503150315031405)
     x = symbols('x')
     exp1 = x**3 - 9*x +3
 

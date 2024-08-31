@@ -6,9 +6,13 @@ from bisseccao import bisseccao
 from newton import newton
 
 def raiz(intervalo,formula):
+    print("Iniciando calculo de raiz")
+    print(f"intervalo: {intervalo}")
+    print(f"formula: {formula}")
     xk,u = bisseccao(intervalo,formula)
-    print(xk)
+    print(f"Finalizado bissecção: {xk}")
     r,i,e = newton(xk,formula)
+    print("Finalizado Newton")
     print(f'raiz: {r}  iteração:{i+u}  erro:{e}')
     return r, i+u, e
 
