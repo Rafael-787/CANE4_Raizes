@@ -9,7 +9,7 @@ def intervalo(exp):
     f = lambdify(x,exp,'numpy')
     
     # Cria uma lista com 10000 x entre o intervalo maior
-    x_values = np.linspace(interval[0], interval[1], 10000)
+    x_values = np.linspace(interval[0], interval[1], 1000)
     
     # Calcula o valor de Y para cada x
     y_values = f(x_values)
