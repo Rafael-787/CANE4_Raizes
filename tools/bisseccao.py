@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def bisseccao (intervalo,exp):
+    x = symbols('x')
     a,b = intervalo
     i_old = b
     u = 0
