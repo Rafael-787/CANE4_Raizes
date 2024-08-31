@@ -3,7 +3,7 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 
-def intervalo(exp):
+def intervalo_func(exp):
     interval = (-100,100) # Intervalo maior
     x = symbols('x')
     f = lambdify(x,exp,'numpy')
@@ -30,6 +30,6 @@ def intervalo(exp):
 if __name__ == "__main__":
     x = symbols('x')
     exp1 = x**3 - 9*x +3
-    data, intervalo_r = intervalo(exp1)
+    data, intervalo_r = intervalo_func(exp1)
 
     print(intervalo_r)
