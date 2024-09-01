@@ -3,7 +3,7 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 
-def bisseccao (intervalo,exp):
+def bisseccao_func (intervalo,exp):
     x = symbols('x')
     a,b = intervalo
     i_old = b

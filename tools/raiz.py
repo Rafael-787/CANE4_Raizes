@@ -2,16 +2,16 @@ from sympy import *
 from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
-from bisseccao import bisseccao
-from newton import newton
+from .bisseccao import bisseccao_func
+from .newton import newton_func
 
-def raiz(intervalo,formula):
+def raiz_func(intervalo,formula):
     print("Iniciando calculo de raiz")
     print(f"intervalo: {intervalo}")
     print(f"formula: {formula}")
-    xk,u = bisseccao(intervalo,formula)
+    xk,u = bisseccao_func(intervalo,formula)
     print(f"Finalizado bissecção: {xk}")
-    r,i,e = newton(xk,formula)
+    r,i,e = newton_func(xk,formula)
     print("Finalizado Newton")
     print(f'raiz: {r}  iteração:{i+u}  erro:{e}')
     return r, i+u, e

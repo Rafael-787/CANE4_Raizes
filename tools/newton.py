@@ -3,7 +3,7 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 
-def newton(xk,exp):
+def newton_func(xk,exp):
     x = symbols('x')
     f = lambdify(x,exp,'numpy')
     derivada = diff(exp,x)

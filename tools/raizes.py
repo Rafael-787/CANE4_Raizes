@@ -3,12 +3,12 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 import math
-from raiz import raiz
+from .raiz import raiz_func
 
 def raizes_func(intervalos,exp):
     dic = {}
     for n,i in enumerate(intervalos):
-        r,it,e = raiz(i,exp)
+        r,it,e = raiz_func(i,exp)
         dic[n+1] = {
                 "raiz":r,
                 "intervalo":i,
