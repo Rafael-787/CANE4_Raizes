@@ -17,5 +17,5 @@ if  col1.button("Visualizar") and exp != '':
     st.pyplot(fc.grafico(exp))
 
 if col2.button("calcular") and exp != '':
-    #print(fc.calcular(exp))
+    st.latex(sp.latex(sp.simplify(exp)))
     st.table(fc.calcular(exp))
