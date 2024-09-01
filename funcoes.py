@@ -11,9 +11,11 @@ def grafico(exp):
     fig, ax = plt.subplots()
     fig.suptitle("Gráfico da expressão")
     ax.plot(data[0,:],data[1,:])
+    ax.grid(true)
     ax.set_ylim(data[0,0],data[0,-1])
     #ax.set_xlabel('Tempo [s]')
     #ax.set_ylabel('Fator N [G]')
+
 
     return fig
 
