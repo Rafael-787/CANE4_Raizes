@@ -19,17 +19,17 @@ Construir um algoritmo e implementar computacionalmente uma rotina que encontre 
 
 ## Pontuação:
 
-- [ ] Construção do gráfico ***(1.0)***
+- [X] Construção do gráfico ***(1.0)***
 
-- [ ] O intervalo é identificado pela rotina ***(1.0)***
+- [X] O intervalo é identificado pela rotina ***(1.0)***
 
-- [ ] Verificação algébrica ***(1.0)***
+- [X] Verificação algébrica ***(1.0)***
 
-- [ ] Uso do método da bissecção corretamente ***(2.5)***
+- [X] Uso do método da bissecção corretamente ***(2.5)***
 
-- [ ] Derivada é resolvida pela rotina ***(1.0)***
+- [X] Derivada é resolvida pela rotina ***(1.0)***
 
-- [ ] Uso do método de Newton corretamente (2.5)
+- [X] Uso do método de Newton corretamente (2.5)
 
-- [ ] Dados de saída (1.0)
+- [X] Dados de saída (1.0)
   
