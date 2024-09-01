@@ -1,0 +1,2 @@
+- $f(a) * f(b) < 0$ : Existe raiz no intervalo \[a,b]
+	- $f(a)$ ou $f(b)$ (apenas 1) deve ser negativa, indica uma inversão

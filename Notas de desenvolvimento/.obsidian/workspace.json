@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "88570e4f2801108f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d576a15e5d5f3df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "748747f54a659008",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Raízes CANE4/Técnico.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bd432ab42f4e4f80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Raízes CANE4/!Main.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30d7d4d2d0993b89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Raízes CANE4/Técnico.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4dec0f5f25ea1dd1",
+    "type": "split",
+    "children": [
+      {
+        "id": "55ecfeff264dae94",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1b8642d67c6ef752",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "842031d6de803f0e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7df05612ccefa38f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "270bb7e3b61e7e42",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b05fb78272964c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7abca79e09013b37",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Raízes CANE4/Técnico.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "33257af699eb245b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Raízes CANE4/Técnico.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "73a7c33080502934",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce4706521fc2a051",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Raízes CANE4/Técnico.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "30d7d4d2d0993b89",
+  "lastOpenFiles": [
+    "Raízes CANE4/Gráfico.md",
+    "Raízes CANE4/Intervalo.md",
+    "Raízes CANE4/Técnico.md",
+    "Raízes CANE4/Verificação.md",
+    "Raízes CANE4/!Main.md",
+    "Raízes CANE4/README.md",
+    "asd.md",
+    "2024-08-19.md",
+    "Untitled.canvas",
+    "Função 4.png",
+    "Ux.md",
+    "Raízes CANE4/UX.md",
+    "Verificação.md",
+    "Raízes CANE4/Raízes CANE4.md",
+    "().md",
+    "Raízes CANE4",
+    "Welcome.md",
+    "2024-08-18.md",
+    "Untitled 1.canvas"
+  ]
+}
