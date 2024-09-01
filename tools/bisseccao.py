@@ -36,5 +36,5 @@ if __name__ == "__main__":
     x = symbols('x')
     exp1 = x**3 - 9*x +3
 
-    raiz, iterações = bisseccao(intervalo,exp1)
+    raiz, iterações = bisseccao_func(intervalo,exp1)
     print(f"Raiz: {raiz}  iterações:{iterações}")

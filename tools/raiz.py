@@ -22,4 +22,4 @@ if __name__ == "__main__":
     x = symbols('x')
     exp1 = x**3 - 9*x +3
 
-    raiz(intervalo,exp1)
+    raiz_func(intervalo,exp1)
