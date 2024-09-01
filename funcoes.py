@@ -3,6 +3,7 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 from tools import intervalo_func
+from tools import raizes_func
 
 def grafico(exp):
     data,_ = intervalo_func(exp)
@@ -16,7 +17,15 @@ def grafico(exp):
 
     return fig
 
+def calcular(exp1):
+    _,intervalo = intervalo_func(exp1)
+
+    dic = raizes_func(intervalo,exp1)
+
+    return dic
 
 if __name__ == "__main__":
     # Área para testes
-    print()
+    x = symbols('x')
+    exp1 = x**3 - 9*x +3
+    print(calcular(exp1))
