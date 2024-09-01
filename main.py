@@ -3,35 +3,19 @@ import sympy as sp
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
-def latex_print(formula:str):
-    st.latex(latex())
-
+import funcoes as fc
+#from tools.intervalo import intervalo_func
 
 st.title("Raízes")
 
-formula = st.text_input("insira a fórmula")
-print(type(formula))
+exp = st.text_input("insira a expressão")
 
-exp = sp.simplify(formula)
+col1 , col2 = st.columns(2)
 
-intervalo = (-100,100)
-x = sp.symbols('x')
-f = sp.lambdify(x,exp,'numpy')
-#sp.nsolve(exp,x,[-5,10])
+if  col1.button("Visualizar") and exp != '':
+    st.latex(sp.latex(sp.simplify(exp)))
+    st.pyplot(fc.grafico(exp))
 
-x_values = np.linspace(intervalo[0], intervalo[1], 10000)
-y_values = f(x_values)
-data = np.hstack((x_values,y_values))
-
-if st.button("Visualizar"):
-    st.latex(sp.latex(exp))
-    
-
-    fig, ax = plt.subplots()
-    ax.plot(x_values,y_values)
-    fig.suptitle(sp.latex(exp))
-    ax.set_ylim(intervalo[0],intervalo[1])
-    ax.set_xlabel('Tempo [s]')
-    ax.set_ylabel('Fator N [G]')
-    st.pyplot(fig)
+if col2.button("calcular") and exp != '':
+    #print(fc.calcular(exp))
+    st.table(fc.calcular(exp))
