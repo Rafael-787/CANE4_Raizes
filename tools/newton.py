@@ -14,7 +14,7 @@ def newton_func(xk,exp):
     u = 0
 
 
-    while e >= 10e-4 or u >= 90:
+    while e >= 10e-9 or u >= 90:
         xk = xk - f(xk)/f_dif(xk)
         e = abs((xk)-xk_old)/abs(xk)
         xk_old = xk

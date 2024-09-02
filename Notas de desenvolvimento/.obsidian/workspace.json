@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c000aebbc79be83b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rotina I.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Raízes CANE4/Técnico.md",
+                "file": "Rotina I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Raízes CANE4/Técnico.md",
+                "file": "Rotina I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Raízes CANE4/Técnico.md"
+                "file": "Rotina I.md"
               }
             }
           }
@@ -171,18 +183,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30d7d4d2d0993b89",
+  "active": "c000aebbc79be83b",
   "lastOpenFiles": [
-    "Raízes CANE4/Gráfico.md",
-    "Raízes CANE4/Intervalo.md",
-    "Raízes CANE4/Técnico.md",
-    "Raízes CANE4/Verificação.md",
+    "Pasted image 20240901003925.png",
+    "Função 4.png",
     "Raízes CANE4/!Main.md",
+    "Raízes CANE4/Verificação.md",
+    "Rotina I.md",
+    "Pasted image 20240901003724.png",
+    "Raízes CANE4/Intervalo.md",
+    "Pasted image 20240901003336.png",
+    "Raízes CANE4/Técnico.md",
+    "Raízes CANE4/Gráfico.md",
     "Raízes CANE4/README.md",
     "asd.md",
     "2024-08-19.md",
     "Untitled.canvas",
-    "Função 4.png",
     "Ux.md",
     "Raízes CANE4/UX.md",
     "Verificação.md",

@@ -11,7 +11,7 @@ n = 0
 i = 1
 print("Início iteração simbólica \n")
 start_geral = time.perf_counter()
-while n < 1:
+while n < 10:
     start_it = time.perf_counter()
     res = eq.subs(x,i)
     dif_time = time.perf_counter() - start_it

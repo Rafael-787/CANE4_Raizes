@@ -11,7 +11,7 @@ def bisseccao_func (intervalo,exp):
     e = 1
     f = lambdify(x,exp,'numpy')
 
-    while u < 3 or e < 10e-4:
+    while u < 3 or e < 10e-9:
         #global c
         i = (a+b)/2
         c = f(i)
