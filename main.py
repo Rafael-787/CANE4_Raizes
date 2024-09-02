@@ -13,9 +13,19 @@ exp = st.text_input("insira a expressão")
 col1 , col2 = st.columns(2)
 
 if  col1.button("Visualizar") and exp != '':
-    st.latex(sp.latex(sp.simplify(exp)))
-    st.pyplot(fc.grafico(exp))
+    try:
+        st.latex(sp.latex(sp.simplify(exp)))
+        st.pyplot(fc.grafico(exp))
+    except:
+        if 'x' not in exp:
+            st.error("Não há variável x na expressão.")
+        else:
+            st.error("Verifique a expressão.")
 
 if col2.button("calcular") and exp != '':
     st.latex(sp.latex(sp.simplify(exp)))
-    st.table(fc.calcular(exp))
+    dic = fc.calcular(exp)
+    if dic != '':
+        st.table(dic)
+    else:
+        st.warning("Não foram encontradas raízes reais no intervalo [-100,100]")
