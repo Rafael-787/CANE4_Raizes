@@ -25,7 +25,8 @@ if  col1.button("Visualizar") and exp != '':
 if col2.button("calcular") and exp != '':
     st.latex(sp.latex(sp.simplify(exp)))
     dic = fc.calcular(exp)
-    if dic != '':
+    print(dic)
+    if dic != {}:
         st.table(dic)
     else:
         st.warning("Não foram encontradas raízes reais no intervalo [-100,100]")
