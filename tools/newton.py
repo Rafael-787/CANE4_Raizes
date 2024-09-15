@@ -1,14 +1,11 @@
 from sympy import *
-from sympy import Poly
-import matplotlib.pyplot as plt
-import numpy as np
 
 def newton_func(xk,exp,limite:int=900):
     x = symbols('x')
     f = lambdify(x,exp,'numpy')
     derivada = diff(exp,x)
     f_dif = lambdify(x,derivada,'numpy')
-    print(f'derivada {derivada}')
+    #print(f'derivada {derivada}')
     e = 1
     xk_old = xk
     u = 0
@@ -20,7 +17,7 @@ def newton_func(xk,exp,limite:int=900):
         xk_old = xk
         u += 1
         
-    print(f'raiz: {xk}  iteração:{u}  erro:{e}')
+    #print(f'raiz: {xk}  iteração:{u}  erro:{e}')
     return xk,u,e
 
 if __name__ == "__main__":

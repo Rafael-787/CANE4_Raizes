@@ -1,6 +1,4 @@
 from sympy import *
-from sympy import Poly
-import matplotlib.pyplot as plt
 import numpy as np
 
 def intervalo_func(exp):

@@ -14,7 +14,7 @@ def raizes_func(intervalos,exp):
                 }
         if w != '':
             dic["aviso"] = w
-        print(f" raiz {n+1} ok")
+        #print(f" raiz {n+1} ok")
     return dic
 
 if __name__ == "__main__":

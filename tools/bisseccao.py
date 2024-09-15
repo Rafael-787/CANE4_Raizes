@@ -1,7 +1,4 @@
 from sympy import *
-from sympy import Poly
-import matplotlib.pyplot as plt
-import numpy as np
 
 def bisseccao_func (intervalo,exp,limite:int=3):
     x = symbols('x')
@@ -19,11 +16,11 @@ def bisseccao_func (intervalo,exp,limite:int=3):
         else:
             b = i
 
-        print(f"i:{i} i_old:{i_old}")
+        #print(f"i:{i} i_old:{i_old}")
         e = abs((i)-i_old)/abs(i)
         i_old = i
         u += 1
-        print(u)
+        #print(u)
 
     #print(f"Raiz: {i}  iterações:{u}")
     return i,u,e

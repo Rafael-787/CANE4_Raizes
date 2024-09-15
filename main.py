@@ -1,10 +1,6 @@
 import streamlit as st
 import sympy as sp
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 import funcoes as fc
-#from tools.intervalo import intervalo_func
 
 st.title("Raízes")
 
@@ -25,7 +21,7 @@ if  col1.button("Visualizar") and exp != '':
 if col2.button("calcular") and exp != '':
     st.latex(sp.latex(sp.simplify(exp)))
     dic = fc.calcular(exp)
-    print(dic)
+    #print(dic)
     aviso = dic.pop("aviso")
     if dic != {}:
         if aviso != []:

@@ -1,7 +1,5 @@
 from sympy import *
-from sympy import Poly
 import matplotlib.pyplot as plt
-import numpy as np
 from tools import intervalo_func
 from tools import raizes_func
 
@@ -13,9 +11,6 @@ def grafico(exp):
     ax.plot(data[0,:],data[1,:])
     ax.grid(true)
     ax.set_ylim(data[0,0],data[0,-1])
-    #ax.set_xlabel('Tempo [s]')
-    #ax.set_ylabel('Fator N [G]')
-
 
     return fig
 
