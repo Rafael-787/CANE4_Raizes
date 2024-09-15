@@ -26,7 +26,10 @@ if col2.button("calcular") and exp != '':
     st.latex(sp.latex(sp.simplify(exp)))
     dic = fc.calcular(exp)
     print(dic)
+    aviso = dic.pop("aviso")
     if dic != {}:
+        if aviso != []:
+            st.warning(aviso[1])
         st.table(dic)
     else:
         st.warning("Não foram encontradas raízes reais no intervalo [-100,100]")

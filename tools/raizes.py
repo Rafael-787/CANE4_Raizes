@@ -1,20 +1,19 @@
 from sympy import *
-from sympy import Poly
-import matplotlib.pyplot as plt
-import numpy as np
-import math
 from .raiz import raiz_func
 
 def raizes_func(intervalos,exp):
     dic = {}
+    dic["aviso"] = []
     for n,i in enumerate(intervalos):
-        r,it,e = raiz_func(i,exp)
+        r,it,e,w = raiz_func(i,exp)
         dic[n+1] = {
-                "raiz":r,
-                "intervalo":i,
+                "raiz":format(r,'.6e'),
+                #"intervalo":i,
                 "interações":it,
-                "erro":"{:.2e}".format(e)
+                "erro":format(e,'.2e'),
                 }
+        if w != '':
+            dic["aviso"] = w
         print(f" raiz {n+1} ok")
     return dic
 

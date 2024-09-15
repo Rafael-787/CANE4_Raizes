@@ -3,7 +3,7 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 
-def bisseccao_func (intervalo,exp):
+def bisseccao_func (intervalo,exp,limite:int=3):
     x = symbols('x')
     a,b = intervalo
     i_old = b
@@ -11,11 +11,9 @@ def bisseccao_func (intervalo,exp):
     e = 1
     f = lambdify(x,exp,'numpy')
 
-    while u < 3 or e < 10e-9:
-        #global c
+    while u < limite and e >= 10e-9:
         i = (a+b)/2
         c = f(i)
-        #print(f"f({i} = {c})")
         if c * f(b) <0 : 
             a = i
         else:
@@ -28,7 +26,7 @@ def bisseccao_func (intervalo,exp):
         print(u)
 
     #print(f"Raiz: {i}  iterações:{u}")
-    return i,u
+    return i,u,e
 
 if __name__ == "__main__":
     

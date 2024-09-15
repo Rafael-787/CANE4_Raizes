@@ -3,24 +3,24 @@ from sympy import Poly
 import matplotlib.pyplot as plt
 import numpy as np
 
-def newton_func(xk,exp):
+def newton_func(xk,exp,limite:int=900):
     x = symbols('x')
     f = lambdify(x,exp,'numpy')
     derivada = diff(exp,x)
     f_dif = lambdify(x,derivada,'numpy')
-    print(derivada)
+    print(f'derivada {derivada}')
     e = 1
     xk_old = xk
     u = 0
 
 
-    while e >= 10e-9 or u >= 90:
+    while u < limite and e >= 10e-9:
         xk = xk - f(xk)/f_dif(xk)
         e = abs((xk)-xk_old)/abs(xk)
         xk_old = xk
         u += 1
         
-    #print(f'raiz: {xk}  iteração:{u}  erro:{e}')
+    print(f'raiz: {xk}  iteração:{u}  erro:{e}')
     return xk,u,e
 
 if __name__ == "__main__":

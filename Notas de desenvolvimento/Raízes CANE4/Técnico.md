@@ -1,4 +1,4 @@
-Área dedicada a condições técnicas da execução do programa.
+wwÁrea dedicada a condições técnicas da execução do programa.
 
 ## Sumário
 
@@ -53,13 +53,13 @@ matplotlib
 ## Tools
 - Uma função para calcular a parte por bissecção, limitada internamente a 3 iterações.
 		- Input - Fórmula, intervalo
-		- Output - raiz, nº iterações
+		- Output - raiz, nº iterações, erro
 - Função cálculo por newton, limitada pelo erro ou nº máximo de iterações.
 	- Input - Fórmula, aproximação inicial (xk)
 	- Output - raiz, nº iterações, erro
 - Função raízes
 	- Input - Intervalo, fórmula
-	- Output - Raiz, Interações, erro
+	- Output - Raiz, Interações, erro, aviso
 - Função intervalo
 	- Cria uma matriz numpy com os valores xy e os intervalos de inversão
 	- Input - fórmula
