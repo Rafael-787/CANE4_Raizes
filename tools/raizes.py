@@ -9,7 +9,7 @@ def raizes_func(intervalos,exp):
         dic[n+1] = {
                 "raiz":format(r,'.6e'),
                 #"intervalo":i,
-                "interações":it,
+                "interações":str(it),
                 "erro":format(e,'.2e'),
                 }
         if w != '':
