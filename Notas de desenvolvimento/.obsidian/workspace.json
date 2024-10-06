@@ -44,14 +44,14 @@
             }
           },
           {
-            "id": "c000aebbc79be83b",
+            "id": "1f42d1d5aed9c1ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Raízes CANE4/Técnico.md",
+                "file": "Raízes CANE4/!Main.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Raízes CANE4/Técnico.md",
+                "file": "Raízes CANE4/!Main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Raízes CANE4/Técnico.md",
+                "file": "Raízes CANE4/!Main.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Raízes CANE4/Técnico.md"
+                "file": "Raízes CANE4/!Main.md"
               }
             }
           }
@@ -183,18 +183,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c000aebbc79be83b",
+  "active": "1f42d1d5aed9c1ba",
   "lastOpenFiles": [
+    "!Main.md",
     "Rotina I.md",
-    "Raízes CANE4/Técnico.md",
     "Pasted image 20240901003925.png",
+    "Pasted image 20240901003724.png",
+    "Pasted image 20240901003336.png",
     "Função 4.png",
     "Raízes CANE4/!Main.md",
-    "Raízes CANE4/Verificação.md",
-    "Pasted image 20240901003724.png",
-    "Raízes CANE4/Intervalo.md",
-    "Pasted image 20240901003336.png",
     "Raízes CANE4/Gráfico.md",
+    "Raízes CANE4/final/Função 4.png",
+    "Raízes CANE4/final",
+    "Raízes CANE4/final/Rotina I.md",
+    "Rotina 2",
+    "Raízes CANE4/Técnico.md",
+    "Raízes CANE4/final/Pasted image 20240901003925.png",
+    "Raízes CANE4/Verificação.md",
+    "Raízes CANE4/final/Pasted image 20240901003724.png",
+    "Raízes CANE4/Intervalo.md",
+    "Raízes CANE4/final/Pasted image 20240901003336.png",
     "Raízes CANE4/README.md",
     "asd.md",
     "2024-08-19.md",
