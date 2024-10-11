@@ -6,6 +6,7 @@ Construir um algoritmo e implementar computacionalmente uma rotina que resolva u
 	- [x] Det(A) != 0
 	- [ ] Lidar com sistemas impossíveis
 	- [ ] Lidar com sistemas de múltiplas respostas
+		- [ ] Matrix A não quadrada
 
 - [x] Resolver o sistema usando eliminação de Gauss com pivotação parcial (3.0)
 
