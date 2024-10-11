@@ -40,9 +40,44 @@ def escalonamento(ma,mb):
     print(f"Ordem: {ordem}")
     print(f"Nº trocas: {n_trocas}")
     print(u)
+    return u,ordem,n_trocas
+
+def res_sistema(u):
+    # Resolução do sistema
+    res = []
+
+    for n,i in enumerate(u[::-1]):
+        print(f"X{len(u)-n}")
+        print()
+        print(f"linha: {i}")
+        print(f"valor igualdade: {round(i[-1],3)}")
+        print(f"coeficientes: {i[-(n+1):-1]}")
+
+        subtracao = 0
+        for k,a in enumerate(i[-(n+1):-1]):
+            print(f"c inicial: {subtracao}")
+            print(f"res: {res}")
+            print(f"calculo: {a} * {res[k-1]}")
+            subtracao += a*res[k-1]
+            print(f"c final: {subtracao}")
+            print()
+
+        x = (i[-1]-subtracao)/i[-(n+2)]
+        print()
+        print(f"X{len(u)-n} = {round(i[-1],3)} - {round(subtracao,3)} / {round(i[-(n+2)],3)}")
+        subtracao = 0
+        res.append(round(x,3))
+        print(f"X{len(u)-n} = {round(x,3)}")
+        print("----------------------------")
+        print()
+
+    res = res[::-1]
+    print(f"Resolução: {res}")
+    return res   
 
 if __name__ == "__main__":
     # Área para testes
     ma = np.array([[8,1,1],[1,5,1],[2,1,2]],dtype=float)
     mb = np.array([[20],[10],[11]],dtype=float)
-    escalonamento(ma,mb)
+    u,_,_ = escalonamento(ma,mb)
+    res_sistema(u)
