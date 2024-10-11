@@ -21,8 +21,14 @@ def calcular(exp1):
 
     return dic
 
+def matrix_x(ordem):
+
+    x = []
+    for i in range(ordem):
+        x.append(f"x{i+1}")
+
+    return " ".join((r'\begin{bmatrix}',r"\\".join(x),r'\end{bmatrix}'))
+
 if __name__ == "__main__":
     # Área para testes
-    x = symbols('x')
-    exp1 = x**3 - 9*x +3
-    print(calcular(exp1))
+    print(matrix_x(3))
