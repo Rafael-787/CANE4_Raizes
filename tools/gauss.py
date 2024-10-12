@@ -80,7 +80,7 @@ def met_gauss(ma,mb):
     # Cálculo da determinante
     det = np.linalg.det(ma)
     if det == 0:
-        dic["aviso"]  = "Matrix indeterminada"
+        dic["aviso"]  = "Sistema indeterminado"
         return dic
     
     else:
