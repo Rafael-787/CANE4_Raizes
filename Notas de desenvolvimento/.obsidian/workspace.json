@@ -44,7 +44,17 @@
             }
           },
           {
-            "id": "c000aebbc79be83b",
+            "id": "1f42d1d5aed9c1ba",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Raízes CANE4/Final/Função 4.png"
+              }
+            }
+          },
+          {
+            "id": "09c7e546f961c96c",
             "type": "leaf",
             "state": {
               "type": "image",
@@ -193,10 +203,24 @@
       "command-palette:Open command palette": false
     }
   },
+<<<<<<< HEAD
   "active": "1f42d1d5aed9c1ba",
   "lastOpenFiles": [
     "Raízes CANE4/!Main.md",
     "!Main.md",
+=======
+  "active": "09c7e546f961c96c",
+  "lastOpenFiles": [
+    "Raízes CANE4/Final/Função 4.png",
+    "!Main.md",
+    "Raízes CANE4/!Main.md",
+    "Raízes CANE4/Final",
+    "Raízes CANE4/Final/Rotina I.md",
+    "!Main.md",
+    "Raízes CANE4/Final/Pasted image 20240901003925.png",
+    "Raízes CANE4/Final/Pasted image 20240901003724.png",
+    "Raízes CANE4/Final/Pasted image 20240901003336.png",
+>>>>>>> 96749459be17658c8f2f99a32b62899c30c972d6
     "Raízes CANE4/Gráfico.md",
     "Raízes CANE4/final/Função 4.png",
     "Raízes CANE4/final",
