@@ -29,6 +29,17 @@ def matrix_x(ordem):
 
     return " ".join((r'\begin{bmatrix}',r"\\".join(x),r'\end{bmatrix}'))
 
+def array_matrix(array):
+    matrix = r'\begin {bmatrix}'
+
+    for i in array:
+        matrix += r' & '.join(map(str,i)) + r'\\' + "\n"
+
+    matrix += r'\end{bmatrix}'
+    return matrix
+
 if __name__ == "__main__":
     # Área para testes
-    print(matrix_x(3))
+    import numpy as np
+    ma = np.array([[8,1,1],[1,5,1],[2,1,2]],dtype=float)
+    print(array_matrix(ma))
