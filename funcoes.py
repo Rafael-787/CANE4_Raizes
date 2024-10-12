@@ -32,8 +32,13 @@ def matrix_x(ordem):
 def array_matrix(array):
     matrix = r'\begin {bmatrix}'
 
-    for i in array:
-        matrix += r' & '.join(map(str,i)) + r'\\' + "\n"
+    _,col = array.shape
+    if col > 1:
+        for i in array:
+            matrix += r' & '.join(map(lambda x: str(round(x,3)),i)) + r'\\' + "\n"
+
+    if col == 1:
+        matrix += r'\\'.join(map(lambda x: str(round(x[0],3)),array)) + "\n"
 
     matrix += r'\end{bmatrix}'
     return matrix
@@ -42,4 +47,5 @@ if __name__ == "__main__":
     # Área para testes
     import numpy as np
     ma = np.array([[8,1,1],[1,5,1],[2,1,2]],dtype=float)
-    print(array_matrix(ma))
+    mb = np.array([[20],[10],[11]],dtype=float)
+    print(array_matrix(mb))
