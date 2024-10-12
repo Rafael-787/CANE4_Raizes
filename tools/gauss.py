@@ -75,22 +75,30 @@ def res_sistema(u):
     print(f"Resolução: {res}")
     return res   
 
-def gauss(ma,mb):
+def met_gauss(ma,mb):
     dic = {}
     # Cálculo da determinante
     det = np.linalg.det(ma)
     if det == 0:
-        print("Matrix indeterminada")
-        return
+        dic["aviso"]  = "Matrix indeterminada"
+        return dic
     
     else:
         escalonada,ordem,n_trocas = escalonamento(ma,mb)
         res = res_sistema(escalonada)
 
-        return res,ordem,n_trocas,escalonada
+        dic ={
+            "resolução":res,
+            "ordem":ordem,
+            "n_trocas":n_trocas,
+            "escalonada":escalonada,
+            "aviso":""
+        }
+
+        return dic
 
 if __name__ == "__main__":
     # Área para testes
     ma = np.array([[8,1,1],[1,5,1],[2,1,2]],dtype=float)
     mb = np.array([[20],[10],[11]],dtype=float)
-    print(gauss(ma,mb))
+    print(met_gauss(ma,mb))
