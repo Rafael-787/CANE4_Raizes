@@ -1,5 +1,6 @@
 from sympy import *
 import matplotlib.pyplot as plt
+import numpy as np
 from tools import intervalo_func
 from tools import raizes_func
 
@@ -32,7 +33,7 @@ def matrix_x(ordem):
 def array_matrix(array):
     matrix = r'\begin {bmatrix}'
 
-    _,col = array.shape
+    _,col = np.array(array).shape
     if col > 1:
         for i in array:
             matrix += r' & '.join(map(lambda x: str(round(x,3)),i)) + r'\\' + "\n"
