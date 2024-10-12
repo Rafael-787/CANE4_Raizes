@@ -13,14 +13,13 @@ mb = np.zeros((shape,1))
 
 st.title("Sistema Linear")
 with st.container():
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3,vertical_alignment='center')
 
-    col1.text("MA")
     col1.data_editor(ma)
 
-    col2.latex(f"X {fc.matrix_x(shape)} =")
+    matrix_x = fc.matrix_x(shape)
+    col2.latex(f"X {matrix_x} = ")
 
-    col3.text("MB")
     col3.data_editor(mb)
 
 with st.container():
@@ -29,7 +28,7 @@ with st.container():
         st.session_state.shape = shape + 1
         st.rerun()
 
-    if col2.button("Clear"):
+    if col1.button("Clear"):
         st.session_state.shape = 2
         st.rerun()
 
@@ -40,10 +39,16 @@ with st.container():
         else:
             st.divider()
             with st.container():
-                st.header("Resultados")
-                st.markdown(f"""
-                        **Ordem**: {dic["ordem"]} \n
-                        **Número de trocas**: {dic["n_trocas"]} \n
-                            """)
-                st.table(dic["escalonada"])
-                st.table(dic["resolução"])
+                st.subheader("Solução")
+                latex_solucao = fc.array_matrix(np.array(dic["resolução"]).reshape(-1, 1))
+                st.latex(f"{matrix_x} = {latex_solucao}")
+                
+                
+                with st.expander("Detalhes"):
+                    st.markdown(f"""
+                            **Ordem**: {dic["ordem"]} \n
+                            **Número de trocas**: {dic["n_trocas"]} \n
+                            **Matrix escalonada**: \n
+                                """)
+                    st.latex(fc.array_matrix(dic["escalonada"]))
+
