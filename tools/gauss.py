@@ -57,8 +57,8 @@ def res_sistema(u):
         for k,a in enumerate(i[-(n+1):-1]):
             #print(f"c inicial: {subtracao}")
             #print(f"res: {res}")
-            #print(f"calculo: {a} * {res[k-1]}")
-            subtracao += a*res[k-1]
+            #print(f"calculo: {a} * {res[::-1][k]}")
+            subtracao += a*res[::-1][k]
             #print(f"c final: {subtracao}")
             #print()
 
